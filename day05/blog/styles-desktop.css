@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+header {
+    padding: 2rem;
+    border-bottom: 0.2rem solid #ccc;
+    margin-bottom: 2rem;
+}
+section {
+    margin: 2vw;
+}
+aside {
+    width: 25vw;
+    padding: 1.5rem;
+    margin-right: 2vw;
+    font-size: 1em;
+}
+footer {
+    padding: 1.5rem;
+    border-top: 0.2rem solid #ccc;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+#posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.post {
+    padding: 1.5rem;
+    border: 0.2rem solid #ccc;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+/* 태블릿 */
+@media (max-width: 1023px) {
+    body {
+        max-width: 90vw;
+    }
+    #posts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    aside {
+        width: 30vw;
+        margin-right: 1vw;
+    }
+}
+/* 모바일 */
+@media (max-width: 767px) {
+    body {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    #posts {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    aside {
+        width: 100%;
+        margin: 1rem;
+    }
+}
