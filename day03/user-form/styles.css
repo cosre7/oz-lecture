@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 15px;
+}
+
+h1::after {
+    content: "⭐️";
+    margin-left: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#registration-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+
+#registration-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+[type="email"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+form p {
+    background-color: beige;
+    padding: 10px 0;
+}
+
+form > p:first-child {
+    margin-top: 20px;
+}
+
+form > p {
+    background-color: rgb(255, 177, 177);
+    padding: 10px 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+label.require::after {
+    content: "*";
+    color: red;
+}
+
+select {
+    width: 100px;
+    border: 1px solid rgb(160, 160, 160);
+}
+
+select:hover {
+    background-color: #ca84ff;
+}
+
+select option:first-child {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+}
+
+[type="submit"] {
+    background-color: rgb(113, 113, 255);
+    color: white;
+    padding: 10px 20px;
+}
+
+[type="reset"] {
+    background-color: rgb(251, 61, 61);
+    color: white;
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: #bbbbbb;
+    cursor: pointer;
+}

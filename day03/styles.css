@@ -1,0 +1,87 @@
+* {
+    margin: 2px;
+    padding: 2px;
+}
+
+header {
+    border: 3px solid green;
+}
+
+h2 {
+    color: blue;
+}
+
+#header-title {
+    font-size: 64px;
+    color: purple;
+}
+
+header ul {
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    font-size: 24px;
+    color: orangered;
+}
+
+.link > a {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.article-title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+[type="text"] {
+    border: 1px dotted orange;
+}
+
+[href*="example"] {
+    color: red;
+}
+
+[name="useremail"] {
+    background-color: aqua;
+}
+
+#container {
+    background-color: beige;
+}
+
+#container .container-btn {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#container .container-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+#container .container-item {
+    font-size: 20px;
+}
+
+#container .container-item:first-child {
+    font-size: 24px;
+}
+
+#container .container-item:last-child {
+    font-size: 40px;
+}
+
+#container .container-item::before {
+    content: "* ";
+}
+
+#container .container-item::after {
+    content: "!!!";
+}
