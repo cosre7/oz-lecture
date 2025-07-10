@@ -72,17 +72,20 @@ const printReverseStars = function (count) {
 
 // 사각형 패턴 출력
 const printSquare = (count) => {
-    // for (let i = 0; i < count; i++) {
-    //     let line = "";
-    //     for (let j = 0; j < count; j++) {
-    //         line += "*";
-    //     }
-    //     console.log(line);
-    // }
-
+    let line = "";
     for (let i = 0; i < count; i++) {
-        console.log("*".repeat(count));
+        for (let j = 0; j < count; j++) {
+            line += "*";
+        }
+        line += "\n";
     }
+    console.log(line);
+
+    // let line = "";
+    // for (let i = 0; i < count; i++) {
+    //     line += "*".repeat(count) + "\n";
+    // }
+    // console.log(line);
 };
 
 // printSquare(input);
