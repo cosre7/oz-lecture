@@ -33,10 +33,9 @@ function getOneNumber() {
 function getNumbers(count) {
     let numbers = [];
     for (let i = 0; i < count; i++) {
-        console.log(`\n--- ${i + 1}번째 숫자 입력 ---`);
-        let num = Number(getOneNumber()); // getOneNumber() 활용
+        let num = Number(getOneNumber());
         numbers.push(num);
-        console.log(`${i + 1}번째 숫자로 ${num}이 저장되었습니다.`);
+        console.log(`${i + 1}번째 숫자: ${num}`);
     }
 
     return numbers;
@@ -97,7 +96,7 @@ function printMultipleStars(...counts) {
         for (let j = 0; j < counts[i]; j++) {
             line += "*";
         }
-        console.log(line);
+        console.log(`Stars for count ${counts[i]}: ${line}`);
     }
 }
 
@@ -144,5 +143,5 @@ function multipleStars(count) {
 // oneLineStars();
 // reverseStars();
 // squareStars();
-// multipleStars(3);
 // printPattern(pattern);
+// multipleStars(3);
