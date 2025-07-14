@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day13 query-node</title>
+    </head>
+    <body>
+        <article class="box-1">
+            <p class="text">text-1</p>
+            <p class="text">text-2</p>
+        </article>
+        <article class="box-2">
+            <p class="text">
+                이 문장은
+                <span class="inner" style="color: blue">파란색</span>을
+                강조합니다
+            </p>
+            <p class="text">text-2</p>
+        </article>
+        <script>
+            // box-2의 class가 text를 포함하는 첫번째 p 태그를 찾고싶음
+            const pEl = document.getElementsByClassName("box-2")[0].children[0];
+            console.log(pEl);
+
+            // query 메소드로 dom 객체 가져오기
+            const queryNode = document.querySelector(
+                ".box-2 .text:first-child"
+            );
+            console.log(queryNode);
+
+            // queryselectAll 메소드로 dom 객체 배열 가져오기
+            const textEls = document.querySelectorAll(".text");
+            console.log(textEls);
+
+            // textContent, innerHtml, innerText
+            const box2TextEl = document.querySelector(
+                ".box-2 .text:first-child"
+            );
+            console.log("box2TextEl.textContent", box2TextEl.textContent);
+            console.log("box2TextEl.innerHTML", box2TextEl.innerHTML);
+            console.log("box2TextEl.innerText", box2TextEl.innerText);
+        </script>
+    </body>
+</html>
