@@ -34,7 +34,7 @@ function main() {
         // localStorage에 저장된 데이터로 화면을 그려줘
         showData(storedData);
     } else {
-        // 서버로부터 데이터 조회한 뒤에 화면 그려줘
+        //
         login(id);
     }
 }
